@@ -1,0 +1,14 @@
+# Netlify Configuration
+[build]
+  publish = "."
+  command = "echo 'No build needed - static site'"
+
+# Form submissions configuration
+[functions]
+  node_bundler = "esbuild"
+
+# Redirect rules
+[[redirects]]
+  from = "/*"
+  to = "/portfolio-rey.html"
+  status = 200
